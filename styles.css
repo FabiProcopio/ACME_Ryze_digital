@@ -1,0 +1,979 @@
+/* montserrat-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./assets/fonts/montserrat-v25-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/montserrat-v25-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/montserrat-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/montserrat-v25-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/montserrat-v25-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./assets/fonts/oswald-v49-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/oswald-v49-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/oswald-v49-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/oswald-v49-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/oswald-v49-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+}
+* h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 72px;
+}
+* h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+}
+* h3 {
+  font-family: "Monserat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+* h4 {
+  font-family: "Monserat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+* p {
+  font-family: "Monserat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+* span {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+* button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+* label {
+  font-family: "Monserat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+* .breadcrumbs {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+* a {
+  font-family: "Monserat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #efb139;
+  text-decoration: underline;
+}
+* a:hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 10px 6% 0 6%;
+  background-color: #ffffff;
+}
+
+#SiteLogo {
+  height: 50px;
+  width: auto;
+}
+
+.NavMenu nav {
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 20px;
+}
+.NavMenu li {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  color: #000000;
+}
+.NavMenu li:hover {
+  color: #2c594e;
+  cursor: pointer;
+}
+.NavMenu h2 {
+  font-size: 18px;
+}
+.NavMenu .dropbtn {
+  background-color: #ffffff;
+  padding: 0 0 5px 8px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  border: none;
+  border-bottom: solid 3px transparent;
+  cursor: pointer;
+}
+.NavMenu .dropbtn:hover {
+  color: #2c594e;
+}
+.NavMenu .dropbtn:focus {
+  color: #efb139;
+  border-bottom: solid 3px #efb139;
+}
+.NavMenu #contactrightButton {
+  padding-right: -8px;
+}
+.NavMenu .dropdown {
+  display: inline-block;
+  position: relative;
+}
+.NavMenu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #efb139;
+  width: max-content;
+  min-width: 160px;
+  z-index: 1;
+  padding: 16px 0;
+  left: auto;
+  right: -100%;
+  top: 92%;
+}
+.NavMenu .dropdown-content a {
+  color: #ffffff;
+  padding: 0 32px;
+  text-decoration: none;
+  display: block;
+}
+.NavMenu .dropdown-content a:hover {
+  color: #2c594e;
+}
+.NavMenu :hover {
+  color: #2c594e;
+}
+.NavMenu .show {
+  display: block;
+}
+
+.BurgerMenu {
+  display: none;
+}
+
+.BurgerMenuContent {
+  display: none;
+}
+
+/* MainContainer */
+.TopContentBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.SiteTitleBox {
+  height: 200px;
+  width: 100%;
+  background-image: url("./assets/ACME_Background-Pattern.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.SiteTitle {
+  padding-left: 6%;
+  color: #efb139;
+}
+
+.SiteNavigationBox {
+  box-sizing: border-box;
+  background-color: #efb139;
+  padding: 7px 0 7px 0;
+}
+.SiteNavigationBox img {
+  height: 20px;
+  width: auto;
+  padding-right: 10px;
+}
+.SiteNavigationBox h4 {
+  margin: 0;
+  padding-right: 10px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 10px;
+}
+.SiteNavigationBox h4:hover {
+  cursor: pointer;
+}
+
+.SiteNavigationContent {
+  display: flex;
+  align-items: center;
+  padding-left: 6%;
+}
+
+#activeCardTab {
+  color: #ffffff;
+}
+
+.MidContentBox {
+  box-sizing: border-box;
+  margin: 40px 6% 5px 6%;
+  display: grid;
+  height: auto;
+}
+
+.BannerImage {
+  width: 100%;
+  height: auto;
+  background-image: url("./assets/shutterstock_780681282-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+  aspect-ratio: 16/5;
+}
+
+.ContentCard {
+  display: flex;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.ContentBox {
+  display: flex;
+  flex-direction: column;
+  width: 77%;
+}
+.ContentBox h2 {
+  color: #2c594e;
+}
+.ContentBox h3 {
+  color: #2c594e;
+}
+.ContentBox h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.ContentBox ul {
+  padding: 0;
+}
+.ContentBox li {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.ContentBox li img {
+  width: 22px;
+  height: auto;
+  margin: 0 20px 0 0;
+}
+.ContentBox .swiper {
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+}
+.ContentBox .swiper .swiper-wrapper {
+  transition-property: transform;
+  transition-duration: 0ms;
+  transform: translate3d(0, 0, 0);
+  height: 100%;
+}
+.ContentBox .swiper .swiper-wrapper .swiper-slide {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContentBox .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  aspect-ratio: 16/5;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.ContentBox .swiperControlBox {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: solid 3px #efb139;
+  top: -70px;
+  margin-bottom: -20px;
+}
+.ContentBox .swiperControlBox .swiperPagebox {
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.ContentBox .swiperControlBox .swiperPagebox span {
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+}
+.ContentBox .swiperControlBox .swiperPagebox .swiper-pagination {
+  display: flex;
+  margin: 0;
+  color: #2c3331;
+}
+.ContentBox .swiperControlBox .navbuttonsswiper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.ContentBox .swiperControlBox .navbuttonsswiper :hover {
+  cursor: pointer;
+}
+.ContentBox .swiperControlBox .swiper-button-prev,
+.ContentBox .swiperControlBox .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background-color: #efb139;
+  border: none;
+  margin-top: 3px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Quotebox {
+  box-sizing: border-box;
+  margin: 64px 0;
+  position: relative;
+}
+.Quotebox h3 {
+  padding-left: 40%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 16px;
+}
+.Quotebox span {
+  margin-top: 10px;
+}
+.Quotebox .QouteBG {
+  z-index: 0;
+  position: absolute;
+  background-color: #edefee;
+  width: 50%;
+  height: 120%;
+  top: -20%;
+  right: 50%;
+}
+
+.SidebarBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: fit-content;
+  margin-left: 16px;
+}
+
+.SideCardTitle {
+  color: #edefee;
+  margin: 0 0 -7px -4px;
+}
+
+.SideCard {
+  box-sizing: border-box;
+  padding: 32px;
+  width: 100%;
+  height: fit-content;
+  background-color: #edefee;
+  position: relative;
+  margin-bottom: 72px;
+}
+
+.ContactContent {
+  box-sizing: border-box;
+}
+.ContactContent h2 {
+  margin-bottom: 5px;
+}
+.ContactContent h4 {
+  margin-bottom: 10px;
+}
+.ContactContent .ProfilePicture {
+  height: auto;
+  width: 100%;
+  margin-bottom: 25px;
+  aspect-ratio: 3/2;
+}
+
+.Contactsub {
+  display: flex;
+  margin-bottom: 5px;
+}
+.Contactsub img {
+  width: 22px;
+  height: auto;
+  margin: 0 20px 10px 0;
+}
+
+.Downloadsub {
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 10px;
+}
+.Downloadsub div {
+  display: flex;
+  background-color: #efb139;
+  align-content: center;
+  padding: 10px;
+  color: black;
+}
+.Downloadsub div :hover {
+  cursor: pointer;
+}
+.Downloadsub img {
+  width: 22px;
+  height: auto;
+  margin: 0 15px 0 0;
+}
+
+.FormBox {
+  background-image: url("./assets/ACME_Background-Pattern.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 6%;
+}
+.FormBox h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.FormBox label {
+  color: white;
+}
+
+.InputContainer {
+  width: 100%;
+}
+
+.Inputbox {
+  display: flex;
+}
+
+.LeftInput {
+  width: 50%;
+}
+
+.LeftSide {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+.LeftSide input {
+  height: 40px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.LeftSide select {
+  height: 46px;
+}
+
+.RightInput {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.RightInput textarea {
+  height: 275px;
+  resize: none;
+  outline: none;
+  font-size: 20px;
+  padding: 1px;
+}
+
+.Inputboxbottom {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.Inputboxbottom div {
+  display: flex;
+}
+.Inputboxbottom div input[type=checkbox] {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  accent-color: #efb139;
+}
+.Inputboxbottom div input[type=checkbox]:hover {
+  cursor: pointer;
+}
+.Inputboxbottom div h4 {
+  color: #ffffff;
+}
+.Inputboxbottom button {
+  box-sizing: border-box;
+  display: flex;
+  background-color: #efb139;
+  padding-right: 10px;
+  border: none;
+}
+.Inputboxbottom button :hover {
+  cursor: pointer;
+}
+.Inputboxbottom button img {
+  height: 24px;
+  width: auto;
+  margin-right: 10px;
+}
+.Inputboxbottom button span {
+  padding-bottom: 3px;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 6% 5px 6%;
+  background-color: #2c3331;
+  font-weight: 500px;
+}
+footer .FooterContentLeft a {
+  margin-right: 25px;
+}
+footer .FooterContentRight p {
+  color: #ffffff;
+}
+
+.FooterContentMid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+.FooterContentMid img {
+  width: 22px;
+  height: auto;
+  padding: 5px;
+  background-color: #efb139;
+}
+.FooterContentMid a {
+  line-height: 0;
+}
+
+@media (max-width: 360px) {
+  header {
+    margin-bottom: 10px;
+  }
+  header .NavMenu {
+    display: none;
+  }
+  header #SiteLogo {
+    height: 35px;
+    width: auto;
+  }
+  header .BurgerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: #efb139;
+    border: none;
+  }
+  header .BurgerMenu :hover {
+    cursor: pointer;
+  }
+  header .BurgerMenu img {
+    height: 24px;
+    width: auto;
+  }
+  .MidContentBox {
+    display: block;
+  }
+  .BannerImage {
+    margin-bottom: 5px;
+  }
+  .ContentCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .ContentCard .ContentBox {
+    width: 100%;
+  }
+  .ContentCard .ContentBox span {
+    margin-bottom: 5px;
+  }
+  .ContentCard .ContentBox .Quotebox h3 {
+    padding-left: 20%;
+  }
+  .ContentCard .ContentBox .swiper {
+    aspect-ratio: 16/5;
+    height: auto;
+    width: 113%;
+    margin-left: -7%;
+  }
+  .ContentCard .ContentBox .swiperControlBox {
+    top: 0;
+    margin-bottom: 50px;
+    width: 113%;
+    margin-left: -7%;
+  }
+  .ContentCard .ContentBox .swiperControlBox .swiper-pagination {
+    margin-left: 14%;
+  }
+  .ContentCard .ContentBox .swiperControlBox .navbuttonsswiper {
+    display: none;
+  }
+  .ContentCard .SidebarBox {
+    width: 100%;
+    margin-left: 0;
+  }
+  .ContentCard .SidebarBox .SideCard {
+    margin-bottom: 32px;
+  }
+  .FormBox h2 {
+    font-size: 30px;
+  }
+  .FormBox .Inputbox {
+    display: block;
+  }
+  .FormBox .Inputbox .LeftInput {
+    width: 100%;
+  }
+  .FormBox .Inputbox .LeftInput .LeftSide {
+    margin: 0;
+  }
+  .FormBox .Inputbox .RightInput {
+    width: 100%;
+  }
+  .FormBox .Inputboxbottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .FormBox .Inputboxbottom div {
+    display: flex;
+    align-items: flex-start;
+  }
+  .FormBox .Inputboxbottom input {
+    margin-top: 5px;
+  }
+  .FormBox .Inputboxbottom button {
+    margin-top: 8px;
+    width: fit-content;
+    padding: 4px 8px;
+  }
+  .FormBox .Inputboxbottom button img {
+    height: 30px;
+    width: auto;
+  }
+  .FormBox .Inputboxbottom button p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 610px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 970px) {
+  header {
+    margin-bottom: 10px;
+  }
+  header .NavMenu {
+    display: none;
+  }
+  header #SiteLogo {
+    height: 35px;
+    width: auto;
+  }
+  header .BurgerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: #efb139;
+    border: solid 3px #efb139;
+  }
+  header .BurgerMenu :hover {
+    cursor: pointer;
+  }
+  header .BurgerMenu img {
+    height: 24px;
+    width: auto;
+  }
+  header .BurgerMenuContent {
+    position: absolute;
+    z-index: 99;
+    right: 6%;
+    background-color: #efb139;
+    width: auto;
+    height: fit-content;
+    border-top: solid 3px #efb139;
+    border-right: solid 3px #efb139;
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  header .BurgerMenuContent .CloseButton {
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    padding: 0;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .BurgerMenuContent .CloseButton :hover {
+    cursor: pointer;
+  }
+  header .BurgerMenuContent .CloseButton img {
+    height: 24px;
+    width: auto;
+  }
+  header .open {
+    display: flex;
+  }
+  header .dropbtn-burger {
+    background-color: #2c3331;
+    color: #ffffff;
+    width: 300px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    border: solid 3px #efb139;
+    border-right: none;
+    cursor: pointer;
+  }
+  header .dropbtn-burger:hover {
+    color: #efb139;
+  }
+  header .dropbtn-burger:focus {
+    color: #2c3331;
+    background-color: #ffffff;
+  }
+  header #contactright {
+    padding-right: 0;
+  }
+  header .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  header .dropdown-content-burger {
+    display: none;
+    background-color: #efb139;
+    min-width: 160px;
+  }
+  header .dropdown-content-burger a {
+    color: #ffffff;
+    padding: 3px 32px;
+    text-decoration: none;
+    display: block;
+  }
+  header .dropdown-content-burger a:hover {
+    color: #2c594e;
+  }
+  header .dropdown-content-burger a h2 {
+    font-size: 20px;
+  }
+  header .display {
+    display: grid;
+    text-align: center;
+  }
+  .MidContentBox {
+    display: block;
+  }
+  .BannerImage {
+    margin-bottom: 5px;
+  }
+  .ContentCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .ContentCard .ContentBox {
+    width: 100%;
+  }
+  .ContentCard .ContentBox span {
+    margin-bottom: 5px;
+  }
+  .ContentCard .ContentBox .Quotebox h3 {
+    padding-left: 20%;
+  }
+  .ContentCard .ContentBox .swiper {
+    aspect-ratio: 16/5;
+    height: auto;
+  }
+  .ContentCard .ContentBox .swiperControlBox {
+    top: 0;
+    margin-bottom: 50px;
+  }
+  .ContentCard .ContentBox .swiperControlBox .navbuttonsswiper {
+    display: none;
+  }
+  .ContentCard .SidebarBox {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .ContentCard .SidebarBox .SideCard {
+    margin-bottom: 32px;
+  }
+  .FormBox h2 {
+    font-size: 30px;
+  }
+  .FormBox .Inputbox {
+    display: block;
+  }
+  .FormBox .Inputbox .LeftInput {
+    width: 100%;
+  }
+  .FormBox .Inputbox .LeftInput .LeftSide {
+    margin: 0;
+  }
+  .FormBox .Inputbox .RightInput {
+    width: 100%;
+  }
+  .FormBox .Inputboxbottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .FormBox .Inputboxbottom div {
+    display: flex;
+    align-items: flex-start;
+  }
+  .FormBox .Inputboxbottom input {
+    margin-top: 5px;
+  }
+  .FormBox .Inputboxbottom button {
+    margin-top: 8px;
+    width: fit-content;
+    padding: 4px 8px;
+  }
+  .FormBox .Inputboxbottom button img {
+    height: 30px;
+    width: auto;
+  }
+  .FormBox .Inputboxbottom button p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  footer p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

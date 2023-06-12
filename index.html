@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="HeaderLogo">
+            <img src="./assets/ACME_Logo.svg" alt="Logo Icon" id="SiteLogo">
+        </div>
+        <div  class="NavMenu">
+            <nav>
+                <ul class="dropdown">
+                    <li id="Products" class="dropdown-content">
+                        <a href="#">
+                            <h2>AWESOME PRODUCTS</h2>
+                        </a>
+                        <a href="#">
+                            <h2>AMAZING PRODUCTS</h2>      
+                        </a>
+                        <a href="#">
+                            <h2>GREAT PRODUCTS</h2>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="handleClick('Products')" class="dropbtn">PRODUCTS</button>
+                <ul class="dropdown">
+                    <li id="Industries" class="dropdown-content">
+                        <a href="#">
+                            <h2>AWESOME INDUSTRIES</h2>
+                        </a>
+                        <a href="#">
+                            <h2>AMAZING INDUSTRIES</h2>      
+                        </a>
+                        <a href="#">
+                            <h2>GREAT INDUSTRIES</h2>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="handleClick('Industries')" class="dropbtn">INDUSTRIES</button>
+                <ul class="dropdown">
+                    <li id="Media" class="dropdown-content">
+                        <a href="#">
+                            <h2>AUTOMOTIVE</h2>
+                        </a>
+                        <a href="#">
+                            <h2>AEROSPACE</h2>      
+                        </a>
+                        <a href="#">
+                            <h2>GENERAL INDUSTRIES</h2>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="handleClick('Media')" class="dropbtn">MEDIA</button>
+                <ul class="dropdown">
+                    <li id="Downloads" class="dropdown-content">
+                        <a href="#">
+                            <h2>AWESOME DOWNLOADS</h2>
+                        </a>
+                        <a href="#">
+                            <h2>AMAZING DOWNLOADS</h2>      
+                        </a>
+                        <a href="#">
+                            <h2>GREAT DOWNLOADS</h2>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="handleClick('Downloads')" class="dropbtn">DOWNLOADS</button>
+                <ul class="dropdown">
+                    <li id="Contacts" class="dropdown-content">
+                        <a href="#">
+                            <h2>AWESOME CONTACTS</h2>
+                        </a>
+                        <a href="#">
+                            <h2>AMAZING CONTACTS</h2>      
+                        </a>
+                        <a href="#">
+                            <h2>GREAT CONTACTS</h2>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="handleClick('Contacts')" class="dropbtn" id="contactrightButton">CONTACTS</button>
+            </nav>
+        </div>
+
+        <button onclick="handleClickBurger('BurgerMenuClose')" class="BurgerMenu" id="CloseBurgerMenu">
+            <img src="./assets/Icons/Menu.svg" alt="burgermenu">
+        </button>
+        
+        <div class="BurgerMenuContent" id="BurgerMenuContent">
+
+            <button onclick="handleClickBurger('BurgerMenuClose')" class="CloseButton">
+                <img src="./assets/Icons/Close.svg" alt="closemenu">
+            </button>
+
+            <div class="dropdown-burger">
+                <button onclick="handleClickBurgerMenu('IndustriesBurger')" class="dropbtn-burger">INDUSTRIES</button>
+                <div id="IndustriesBurger" class="dropdown-content-burger">
+                    <a href="#">
+                        <h2>AWESOME INDUSTRIES</h2>
+                    </a>
+                    <a href="#">
+                        <h2>AMAZING INDUSTRIES</h2>      
+                    </a>
+                    <a href="#">
+                        <h2>GREAT INDUSTRIES</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown-burger">
+                <button onclick="handleClickBurgerMenu('MediaBurger')" class="dropbtn-burger">MEDIA</button>
+                <div id="MediaBurger" class="dropdown-content-burger">
+                    <a href="#">
+                        <h2>AUTOMOTIVE</h2>
+                    </a>
+                    <a href="#">
+                        <h2>AEROSPACE</h2>      
+                    </a>
+                    <a href="#">
+                        <h2>GENERAL INDUSTRIES</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown-burger">
+                <button onclick="handleClickBurgerMenu('DownloadsBurger')" class="dropbtn-burger">DOWNLOADS</button>
+                <div id="DownloadsBurger" class="dropdown-content-burger">
+                    <a href="#">
+                        <h2>AWESOME DOWNLOADS</h2>
+                    </a>
+                    <a href="#">
+                        <h2>AMAZING DOWNLOADS</h2>      
+                    </a>
+                    <a href="#">
+                        <h2>GREAT DOWNLOADS</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown-burger">
+                <button onclick="handleClickBurgerMenu('ContactsBurger')" class="dropbtn-burger" id="contactright">CONTACTS</button>
+                <div id="ContactsBurger" class="dropdown-content-burger">
+                    <a href="#">
+                        <h2>AWESOME CONTACTS</h2>
+                    </a>
+                    <a href="#">
+                        <h2>AMAZING CONTACTS</h2>      
+                    </a>
+                    <a href="#">
+                        <h2>GREAT CONTACTS</h2>
+                    </a>
+                </div>
+            </div>
+  
+        </div>
+
+    </header>
+
+    <main class="MainContainer">
+
+        <section class="TopContentBox">
+            <div class="SiteTitleBox">
+                <h1 class="SiteTitle">NEWS</h1>
+            </div>
+            <div class="SiteNavigationBox">
+                <div class="SiteNavigationContent">
+                    <h4 class="breadcrumbs">MEDIA</h4>
+                    <img src="./assets/Icons/Arrow-Right.svg" alt="arrow right">
+                    <h4 class="breadcrumbs">NEWS</h4>
+                    <img src="./assets/Icons/Arrow-Right.svg" alt="arrow right">
+                    <h4 class="breadcrumbs" id="activeCardTab">ARTICLE</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="MidContentBox">
+            
+            <div class="BannerImage"></div>
+
+            <div class="ContentCard">
+                <div class="ContentBox">
+                    <div class="ContenUpperB">
+                        <span>
+                            23/18/2001
+                        </span>
+                        <h2>
+                            THE SMALLEST AND SHALLOWEST WORLD'S MAJOR OCEANS
+                        </h2>
+                        <br>
+                        <p>
+                            The Arctic Ocean is the smallest and shallowest of the world's five major oceans. It is also known as the codest
+                            of all the oceans. The International Hydrographic Organization (<a href="#">IHO</a>) recognizes it as an ocean, although some
+                            oceanographers call it the Arctic Sea. It is sometimes classified as an estuary of the Atlantic Ocean, and it is also
+                            seen as the northernmost part of the all-encompassing World Ocean.<br>
+                            <br>
+                            Located mostly in the Arctic north polar region in the middle of the Northern Hemisphere, besides its
+                            surrounding waters the Arctic Ocean is surrounded by Eurasia and North America. It is partly covered by sea ice
+                            throughout the year and almost completely in the winter. The Arctic Ocean's surface temperature and salinity vary
+                            seasonally as the ice cover melts and freezes; its salinity is the lowest on average fo the five major oceans, due
+                            to low evaporation, heavy fresh water inflow from rivers and streams, and limited connection and outflow to
+                            surrounding oceanic waters with higher salinities. The summer shrinking of the ice has been quoted at 50%. The 
+                            US National Snow and Ice Data Center (<a href="#">NSIDC</a>) uses satellite data to provide a daily record of Arctic sea ice
+                            cover and the rate of melting compared to an average period and specific past years.
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <h3>History</h3>
+                        <p>
+                            Human habitation in the North American polar region goes back at least 50,000 - 17,000 years ago, during the 
+                            Wisconsin glaciation. At this time, falling sea levels allowed people to move across the Bering land bridge that
+                            joined Siberia to northwestern North America (Alaska), leading to the Settlement of the Americas.
+                        </p>
+                        <br>
+                        <h4>Paleo-Eskimo culture</h4>
+                        <div class="TextList">
+                            <ul>
+                                <li>
+                                    <img src="./assets/Icons/Arrowhead-Right.svg" alt="arrowhead right">
+                                    <p>Paleo-Eskimo groups included the Pre-Dorset (c. 3200-850 BC)</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/Icons/Arrowhead-Right.svg" alt="arrowhead right">
+                                    <p>the Saqqaq culture of Greenland (2500-800 BC)</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/Icons/Arrowhead-Right.svg" alt="arrowhead right">
+                                    <p>the Independence I and Independence II cultures of northeastern Canada and Greenland 
+                                        (c. 2400-1800 BC and c. 800-1 BC)</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/Icons/Arrowhead-Right.svg" alt="arrowhead right">
+                                    <p>the Groswater of Labrador and Nunavik</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/Icons/Arrowhead-Right.svg" alt="arrowhead right">
+                                    <p>the Dorset culture (500 BC to AD 1500)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <p>
+                            The Dorset were the last major Paleo-Eskimo culture in the Arctic before the migration east from present-day 
+                            Alaska of the Thule, the ancestors of the modern Inuit.<br>
+                            For much of European history, the north polar regions remained largely unexplored and their geography
+                            conjectural. Pytheas of Massilia recorded an account of a journey northward in 325 BC, to a land he called
+                            "Eschate Thule", where the Sun only set for three hours each day and the water was replaced by a congealed
+                            substance "on which on can neither walk or sail". He was probably describing loose sea ice known today as 
+                            "growlers" or "bergy bits"; his "Thule" was probably Norway, though the Faroe Islands or Shetland have also 
+                            been suggested.<br>
+                            <br>
+                            Early cartographers were unsure whether to draw the region around the North Pole as land (as in Johannes 
+                            Ruysch's map of 1507, or Gerardus Mercator's map of 1595) or water (as with Martin Waldseemüller's world map
+                            of 1507). The fervent desire of European mearchants for a nothern passage, the Northern Sea Route or the 
+                            Northwest Passage, to "Cathay"(China) caused water to win out, and by 1723 mapmakers such as Johann
+                            Homann featured an extensive "Oceanus Septentrionalis" at the northern edge of their charts.
+                        </p>
+                        <br>
+                    </div>
+                
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/shutterstock_780681282-scaled.jpg" alt="picture 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/150823-G-MR731-129-sm-1280.jpg" alt="picture 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/502818_gettyimages931516098_595282_crop.jpg" alt="picture 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/arctic_pexels-pixabay-53389.jpg" alt="picture 4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/Sea_ice.jpg" alt="picture 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiperControlBox">
+                        <div class="swiperPagebox">
+                            <span class="swiper-pagination"></span>
+
+                        </div>
+                    
+                        <div class="navbuttonsswiper">
+                            <button class="swiper-button-next">
+                                <img src="./assets/Icons/Arrowhead-Up.svg" alt="arrow up">
+                            </button>
+                            <button class="swiper-button-prev">
+                                <img src="./assets/Icons/Arrowhead_Down.svg" alt="arrow down">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="ContenLowerB">
+                        <p>
+                            The few expeditions to penetrate much beyond the Arctic Circle in this era added only small islands, such as 
+                            Novaya Zemlya (11th century) and Spitzbergen (1596), though since these were often surrounded by pack-ice, 
+                            their northern limits were not so clear. The makers of navigational charts, more conservative than some of the 
+                            more fanciful cartographers, tended to leave the region blank, with only fragments of known coastline sketched 
+                            in.<br>
+                            <br>
+                            This lack of knowledge of what lay north of the shifting barrier of ice gave rise to a number of conjectures. In 
+                            England and other European nations, the myth of an "Open Polar Sea" was persistent. John Barrow, longtime 
+                            Secondary Secretary of the British Admiralty, promoted exploration of the region from 1818 to 1845 in search of this.
+                            In the United States in the 1850s and 1860s, the explorers Elisha Kane and Isaac Israel Hayes both claimed to 
+                            have seen part of this elusive body of water. Even quite late in the century, the eminent authority Matthew 
+                            Fontaine Maury included a description of the Open Polar Sea in his textbook The Physical Geography of the Sea 
+                            (1883). Neverthheless, as all the explorers who travelled closer and closer to the pole reported, the polar ice cap is 
+                            quite thick, and persists year-round.
+                        </p>
+    
+                        <div class="Quotebox">
+                            <h3>"The Allied commitment to resupply the Soviet Union via
+                                its northern ports was opposed by German naval and air 
+                                forces."
+                                <span>SOMEBODY, ANOTHER CORPORATION</span>
+                            </h3>
+                            <div class="QouteBG"></div>
+                        </div>
+    
+                        <p>
+                            Fridtjof Nansen was the first to make a nautical crossing of the Arctic Ocean, in 1896. The first surface crossing of 
+                            the ocean was led by Wally Herbert in 1969, in a dog sled expedition from Alaska to Svalbard, with air support.
+                            The first nautical transit of the north pole was made in 1958 by the submarine USS Nautilus, and the first surface 
+                            nautical transit occured in 1977 by the icebreaker NS Arktika.
+                        </p>
+                    </div>
+                </div>
+
+                
+                <!-- sidebox -->
+
+                <div class="SidebarBox">
+
+                    <h1 class="SideCardTitle">CONTACT</h1>
+                    <div class="SideCard">
+                        <div class="ContactContent">
+                            <img class="ProfilePicture" src="./assets/MaxMustermanImg.JPG" alt="Profile picture">
+                            <h2>MARK MUSTERMAN</h2>
+                            <h4>MARKETING ASSISTENT</h4>
+                            <div class="ContactContacts">
+                                <div class="Contactsub">
+                                    <img src="./assets/Icons/Phone.svg" alt="phone icon">
+                                    <a href="#">+49 164 358 645 26</a>
+                                </div>
+                                <div class="Contactsub">
+                                    <img src="./assets/Icons/Clock.svg" alt="time icon">
+                                    <p>Mo/Tu/Fr: 08:00 a.m. - 05:30 p.m.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="SideCardTitle">DOWNLOADS</h1>
+                    <div class="SideCard"> 
+                        <div class="DownloadContent">
+                            <div class="Downloadsub">
+                                <img src="./assets/Icons/Image.svg" alt="Image icon">
+                                <div>
+                                    <img src="./assets/Icons/Download.svg" alt="Download icon">
+                                    <p class="breadcrumbs">NORTH POLE AS LAND</p>
+                                </div>
+                            </div>
+                            <div class="Downloadsub">
+                                <img src="./assets/Icons/File.svg" alt="File icon">
+                                <div>
+                                    <img src="./assets/Icons/Download.svg" alt="Download icon">
+                                    <p class="breadcrumbs">EUROPEAN MERCATOR MAP</p>
+                                </div>
+                            </div>
+                            <div class="Downloadsub">
+                                <img src="./assets/Icons/Image.svg" alt="Image icon">
+                                <div>
+                                    <img src="./assets/Icons/Download.svg" alt="Download icon">
+                                    <p class="breadcrumbs">EARLY CATOGRAPHYS AROUND 1507</p>
+                                </div>
+                            </div>
+                            <div class="Downloadsub">
+                                <img src="./assets/Icons/File.svg" alt="File icon">
+                                <div>
+                                    <img src="./assets/Icons/Download.svg" alt="Download icon">
+                                    <p class="breadcrumbs">NORTH PASSAGE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h1 class="SideCardTitle">LINKS</h1>
+                    <div class="SideCard">
+                        <div class="LinksContent">
+                            <div class="Contactsub">
+                                <img src="./assets/Icons/Extern-Link.svg" alt="Extern-Link icon">
+                                <a href="#">UNENDLICHEWEITEN.DE</a>
+                            </div>
+                            <div class="Contactsub">
+                                <img src="./assets/Icons/Link.svg" alt="Link icon">
+                                <a href="#">ANOTHER ACME ARTICLE</a>
+                            </div>
+                            <div class="Contactsub">
+                                <img src="./assets/Icons/Extern-Link.svg" alt="Extern-Link icon">
+                                <a href="#">SOMEWHERE.ORG</a>
+                            </div>
+                        </div>
+                    </div>
+                          
+                </div>
+            </div>
+        </section>
+
+        <section class="FormBox">
+            <h2>
+                Do you have a question?
+            </h2>
+            <form class="InputContainer">
+                <div class="Inputbox">
+                    <div class="LeftInput">
+                        <div class="LeftSide">
+                            <label>Name</label>
+                            <input>
+                        </div>
+                        <div class="LeftSide">
+                            <label>Email</label>
+                            <input>
+                        </div>
+                        <div class="LeftSide">
+                            <label>Phone (optional)</label> 
+                            <input>
+                        </div>
+                        <div class="LeftSide">
+                            <label>Country</label> 
+                            <select>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="RightInput">
+                        <label>Your Message</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="Inputboxbottom">
+                    <div>
+                        <input type="checkbox">
+                        <label>I hereby consent to the processing of my data in accordance with the <a href="#">privacy information</a>.</label>
+                    </div>
+                    <button>
+                        <img src="./assets/Icons/Arrow-Right.svg" alt="arrow left">
+                        <span class="breadcrumbs">SEND</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="FooterContentLeft">
+            <a href="#">Legal Notice</a>
+            <a href="#">Privacy</a>
+        </div>
+
+        <div class="FooterContentMid">
+            <a>
+                <img src="./assets/Icons/Facebook.svg" alt="facebookIcon">
+            </a>
+            <a>
+                <img src="./assets/Icons/LinkedIn.svg" alt="linkedinIcon">
+            </a>
+            <a>
+                <img src="./assets/Icons/Twitter.svg" alt="twitterIcon"> 
+            </a>
+        </div>
+
+        <div class="FooterContentRight">
+            <p>© 2021 ACME. Part of the <a href="#">ACME Group</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
